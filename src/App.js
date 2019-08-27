@@ -16,8 +16,7 @@ class App extends React.Component {
       <div className='coffee-bean-background'>
         <h1 className='app-header custom-text'>Barista Helper</h1>
         <h3 className='instructions custom-text'>Pick a brew method</h3>
-        {this.renderBrewMethods()}
-        
+        {this.renderBrewMethods()}   
       </div>
     );
   }
