@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import BrewMethods from './components/BrewMethods';
+import { BREW_METHODS } from './constants';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  
+  renderBrewMethods = () => {
+    return BREW_METHODS.map(method => {
+      return <BrewMethods method={method}/>
+    })
+  }
+
+  render() {
+    return (
+      <div className='coffee-bean-background'>
+        <h1 className='app-header custom-text'>Barista Helper</h1>
+        <h3 className='instructions custom-text'>Pick a brew method</h3>
+        {this.renderBrewMethods()}
+        
+      </div>
+    );
+  }
+
 }
 
 export default App;
