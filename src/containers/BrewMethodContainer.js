@@ -27,23 +27,6 @@ class BrewMethodContainer extends React.Component {
     )
   }
 
-  // render() {
-  //   return (
-  //     <Grid>
-  //       <Grid.Row columns={2}>
-  //         <Grid.Column>
-  //           <img src={aeropress} />
-  //         </Grid.Column>
-  //         <Grid.Column>
-  //           <img src={frenchpress} />
-  //         </Grid.Column>
-  //         <Grid.Column>
-  //           <img src={espresso} />
-  //         </Grid.Column>
-  //       </Grid.Row>
-  //     </Grid>
-  //   )
-  // }
 }
 
 export default BrewMethodContainer;
